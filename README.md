@@ -2,6 +2,8 @@
 
 A modern, responsive web application for managing availability slots and scheduling, built with React and TypeScript.
 
+🔗 https://enchanting-praline-18103a.netlify.app/
+
 ![Slot Booking App Screenshot](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=2068)
 
 ## Features
