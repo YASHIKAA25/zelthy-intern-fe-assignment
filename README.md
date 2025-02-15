@@ -61,18 +61,30 @@ The application will be available at `http://localhost:5173`
 
 ```
 zelthy-intern-fe-assignment/
-├── src/
-│   ├── components/          # Reusable UI components
-│   │   ├── TimeSlotPicker.tsx
-│   │   └── TimezoneSelect.tsx
-│   ├── store/              # State management
-│   │   └── availabilityStore.ts
-│   ├── types/              # TypeScript interfaces
-│   │   └── index.ts
-│   ├── App.tsx            # Main application component
-│   └── main.tsx           # Application entry point
-├── public/                # Static assets
-└── package.json          # Project dependencies and scripts
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── README.md
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   ├── TimeSlotPicker.tsx
+│   │   └── TimezoneSelect.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── store
+│   │   └── availabilityStore.ts
+│   ├── types
+│   │   └── index.ts
+│   └── vite-env.d.ts
+├── tailwind.config.js
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
 ```
 
 ## Available Scripts
@@ -104,18 +116,6 @@ The application uses Zustand for state management, providing:
 - Centralized state for availability slots
 - Easy-to-use actions for managing slots
 - Persistent state across page reloads
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
