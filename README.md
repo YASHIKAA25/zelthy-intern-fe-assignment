@@ -1,30 +1,134 @@
-<!-- DO NOT REMOVE EXISTING CONTENTS OF THIS FILE, EVEN IN YOUR REPOSITORY -->
-# Frontend assignment repository template
+# Slot Booking Application
 
-This is a template repository for submitting assignment for the Frontend developer internship at Zelthy. All those who are submitting the frontend assignment must use this template.
+A modern, responsive web application for managing availability slots and scheduling, built with React and TypeScript.
 
-Assignment link: https://zelthy.com/assignments/frontend-intern
+![Slot Booking App Screenshot](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=2068)
 
-Submission form: https://forms.gle/o8tUdshRWS33tg8X6
+## Features
 
-### How to use this template?
+- 📅 Weekly availability management
+- 🌍 Timezone support with automatic detection
+- ⚡ Real-time slot updates
+- 📱 Responsive design for mobile and desktop
+- 🎨 Clean and modern UI using Tailwind CSS
+- 🔄 Copy availability between days
+- ⌚ Intuitive time slot picker
+- 🎯 Efficient state management with Zustand
 
-1. If you are reading this on GitHub, click the "use this template" dropdown in the top right corner of the page and select "Create a new repository".
-<img width="1470" alt="Screenshot 2025-02-07 at 6 10 26 PM" src="https://github.com/user-attachments/assets/360f44ae-57e8-4c47-b768-cbfd95b3aa0a" />
+## Tech Stack
 
-2. Next you will be redirected to create a new repository page on GitHub with this repository as a template. Fill the repository name and description and click "Create repository".
-<img width="1470" alt="Screenshot 2025-02-07 at 3 09 25 PM" src="https://github.com/user-attachments/assets/17bd7a00-99fb-4ff6-8003-4b96506189f3" />
+- **Frontend Framework**: React 18
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand
+- **Date/Time Handling**: date-fns
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **UI Components**: Headless UI
 
-3. And thats it! A new repository using this template has been created for you!
+## Getting Started
 
-### How to submit the assignment?
+### Prerequisites
 
-1. Clone the repository that you created using the instructions above.
+- Node.js (v16 or higher)
+- npm or yarn
 
-2. Add and commit your changes to that repository.
+### Installation
 
-3. Push the changes to github.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YASHIKAA25/zelthy-intern-fe-assignment.git
+   ```
 
-4. Go to the submission form and fill the details and submit the assignment.
+2. Navigate to the project directory:
+   ```bash
+   cd zelthy-intern-fe-assignment
+   ```
 
-## Happy coding!
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+The application will be available at `http://localhost:5173`
+
+## Project Structure
+
+```
+zelthy-intern-fe-assignment/
+├── src/
+│   ├── components/          # Reusable UI components
+│   │   ├── TimeSlotPicker.tsx
+│   │   └── TimezoneSelect.tsx
+│   ├── store/              # State management
+│   │   └── availabilityStore.ts
+│   ├── types/              # TypeScript interfaces
+│   │   └── index.ts
+│   ├── App.tsx            # Main application component
+│   └── main.tsx           # Application entry point
+├── public/                # Static assets
+└── package.json          # Project dependencies and scripts
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Key Features Explained
+
+### Availability Management
+
+Users can:
+- Set availability for different days of the week
+- Add multiple time slots per day
+- Remove time slots
+- Copy availability between days
+
+### Timezone Support
+
+- Automatic timezone detection
+- Manual timezone selection
+- All times are stored and displayed in the user's local timezone
+
+### State Management
+
+The application uses Zustand for state management, providing:
+- Centralized state for availability slots
+- Easy-to-use actions for managing slots
+- Persistent state across page reloads
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [Lucide React](https://lucide.dev/) for the beautiful icons
+- [date-fns](https://date-fns.org/) for date manipulation
+- [Zustand](https://zustand-demo.pmnd.rs/) for state management
+- [Headless UI](https://headlessui.com/) for accessible UI components
+
+## Contact
+
+YASHIKAA25 - [GitHub](https://github.com/YASHIKAA25)
+
+Project Link: [https://github.com/YASHIKAA25/zelthy-intern-fe-assignment](https://github.com/YASHIKAA25/zelthy-intern-fe-assignment)
+
+
